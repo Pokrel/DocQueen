@@ -1,0 +1,153 @@
+/* General styling for dark theme */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.toolbar select, .toolbar input, .toolbar button {
+    background: #444;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-bar {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.user-id {
+    background: #444;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.tabs-bar {
+    background-color: #333;
+    border-bottom: 1px solid #444;
+}
+
+.tabs {
+    display: flex;
+    overflow-x: auto;
+}
+
+.tab {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-right: 1px solid #555;
+}
+
+.tab.active, .tab:hover {
+    background: #555;
+}
+
+.add-tab {
+    background: #666;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 130px); /* Adjust based on the top bar and toolbar height */
+}
+
+.sidebar {
+    width: 250px;
+    background: #333;
+    padding: 20px;
+    border-right: 1px solid #444;
+    overflow-y: auto;
+}
+
+.add-folder {
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.folder-list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.folder-list li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.folder-list li.folder, .folder-list li.file {
+    display: flex;
+    align-items: center;
+}
+
+.folder-list li.folder > span, .folder-list li.file > span {
+    margin-left: 10px;
+}
+
+.folder-list .sub-folder-list {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.folder-list .expanded > .sub-folder-list {
+    display: block;
+}
+
+.folder-list .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content-textarea {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    resize: none;
+}

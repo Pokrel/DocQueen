@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="toolbar">
+            <select class="font-select">
+                <option>Sans Serif</option>
+                <option>Serif</option>
+                <option>Monospace</option>
+                <option>Arial</option>
+            </select>
+            <select class="font-size">
+                <option>12px</option>
+                <option>14px</option>
+                <option>16px</option>
+                <option>18px</option>
+                <option>20px</option>
+            </select>
+            <input type="color" class="font-color">
+            <button class="bold">B</button>
+            <button class="italic">I</button>
+            <button class="underline">U</button>
+        </div>
+        <input type="text" class="search-bar" placeholder="Search">
+        <div class="user-id">uid</div>
+    </div>
+    <div class="tabs-bar">
+        <div class="tabs">
+            <button class="tab">Title1</button>
+            <button class="tab">Title2</button>
+            <button class="tab active">Title3</button>
+            <button class="tab">Title4</button>
+            <button class="tab">Title5</button>
+            <button class="tab add-tab">+</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <button class="add-folder">Add Folder</button>
+            <ul class="folder-list">
+                <!-- Dynamic folders and files will be added here -->
+            </ul>
+        </div>
+        <div class="content">
+            <textarea class="content-textarea" placeholder="Write your content here..."></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
