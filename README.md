@@ -1,2 +1,2 @@
 # DocQueen
-Easy yet powerful documentation Website project
+Easy documentation and collaboration project
